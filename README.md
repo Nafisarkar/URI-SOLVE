@@ -1,2 +1,2 @@
-# URI_SOLVED_CODES
- SOVLED URI CODES
+# URI_SOLVE_CODE
+# please try to solve the problem on your own first.
