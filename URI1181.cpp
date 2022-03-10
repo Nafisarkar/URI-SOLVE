@@ -22,10 +22,10 @@ int main(){
         }
     }
 
-    if(want == 'S'){
+    if(want=='S'){
         printf("%.1lf\n",total);
     }
-    else if(want == 'M'){
+    else if(want=='M'){
         total=total/12.0;
         printf("%.1lf\n",total);
     }
