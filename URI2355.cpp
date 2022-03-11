@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<math.h>
-#include"inout.h"
+//#include"inout.h"
 
 int main(){
-	inout();
+	//inout();
 	unsigned long time;
 	while(1){
 		scanf("%ld",&time);
@@ -12,9 +12,9 @@ int main(){
 		}
 		double g = time/90.0;
 
-		int b=floor(g*1);
-		int ge=ceil(g*7);
-		printf("Brasil %d x Alemanha %d\n",b,ge);
+		long int b=floor(g*1);
+		long int ge=ceil(g*7);
+		printf("Brasil %ld x Alemanha %ld\n",b,ge);
 		
 		time = 0;
 	}
