@@ -1,8 +1,10 @@
 #include<stdio.h>
 #include<string.h>
+//#include"inout.h"
 int main(){
+    //inout();
     int size=0,numer=0,test=0,j,i;
-    char a[10]={};
+    char a[100]={};
     scanf("%d",&test);
     for(j=0;j<test;j++){
     scanf("%s",&a);
