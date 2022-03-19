@@ -1,33 +1,44 @@
+#include<iostream>
 #include<stdio.h>
+#include<cstring>
+#include "inout.h"
+using namespace std;
 int main(){
-    char string1[]={};
-    char string2[]={};
-    char string3[]={};
-    gets(string1);
-    gets(string2);
-    gets(string3);
-    printf("%s%s%s\n",string1 ,string2 ,string3);
-    printf("%s%s%s\n",string2 ,string3 ,string2);
-    printf("%s%s%s\n",string3 ,string1 ,string2);
-    int i;
-    for(i=0;i<10;i++){
-        if(string1[i]=='\n'){
-            break;
+    inout();
+    string s1,s2,s3;
+    getline (cin, s1);
+    getline (cin, s2);
+    getline (cin, s3);
+    cout<<s1<<s2<<s3<<endl;
+    cout<<s2<<s3<<s1<<endl;
+    cout<<s3<<s1<<s2<<endl;
+    int f1=s1.length();
+    int f2=s2.length();
+    int f3=s3.length();
+    
+    if(f1>10){
+        int i=0;
+        while(s1[i] != '\0' && i < 10){
+            cout<<s1[i];
+            i++;
         }
-        printf("%c",string1[i]);
-    }
-    for(i=0;i<10;i++){
-        if(string2[i]=='\n'){
-            break;
+    }else cout<<s1;
+
+    if(f2>10){
+        int i=0;
+        while(s2[i] != '\0' && i < 10){
+            cout<<s2[i];
+            i++;
         }
-        printf("%c",string2[i]);
-    }
-    for(i=0;i<10;i++){
-        if(string3[i]=='\n'){
-            break;
+    }else cout<<s2;
+    
+    if(f3>10){
+        int i=0;
+        while(s3[i] != '\0' && i<10){
+            cout<<s3[i];
+            i++;
         }
-        printf("%c",string3[i]);
-    }
+    }else cout<<s3;
     printf("\n");
     return 0;
 }
