@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "inout.h";
+#include "inout.h"
 #define true 1
 #define false 0
 
@@ -34,7 +34,7 @@ int main()
                     }else if(j==3 && temp[j]=='1'){
                         counter+=8;
                     }else if(j==4 && temp[j]=='1'){
-                        counter+=4;
+                        counter+=4;"font_face": "",
                     }else if(j==5 && temp[j]=='1'){
                         counter+=2;
                     }else if(j==6 && temp[j]=='1'){
